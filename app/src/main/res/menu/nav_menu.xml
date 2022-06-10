@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/change_head"
+            android:title="更改头像"/>
+        <item
+            android:id="@+id/changeBg"
+            android:title="更改背景"/>
+        <item
+            android:id="@+id/change_theme"
+            android:title="更改主题"/>
+        <item
+            android:id="@+id/settime_to_close"
+            android:title="定时关闭"/>
+    </group>
+</menu>

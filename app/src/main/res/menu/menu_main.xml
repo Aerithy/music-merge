@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_edit"
+        android:icon="@drawable/icon_search"
+        android:orderInCategory="80"
+        android:title="@string/action_edit"
+        app:showAsAction="ifRoom|withText"
+        app:actionViewClass="android.widget.SearchView" />
+
+<!--    <item-->
+<!--        android:id="@+id/action_share"-->
+<!--        android:icon="@drawable/regular_share"-->
+<!--        android:orderInCategory="80"-->
+<!--        android:title="@string/action_share"-->
+<!--        app:showAsAction="ifRoom|withText" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/action_new"-->
+<!--        android:icon="@drawable/ab_new"-->
+<!--        android:orderInCategory="80"-->
+<!--        android:title="@string/action_new"-->
+<!--        app:showAsAction="ifRoom|withText" />-->
+<!--    <item-->
+<!--        android:id="@+id/action_settings"-->
+<!--        android:icon="@drawable/setting"-->
+<!--        android:orderInCategory="80"-->
+<!--        android:title="@string/action_setting"-->
+<!--        app:showAsAction="ifRoom|withText" />-->
+
+</menu>

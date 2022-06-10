@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@mipmap/list_icn_arr_right"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            />
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="15"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/musicName"
+                android:layout_marginTop="20dp"
+                android:text="musicName"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/singer"
+                android:text="singer"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:gravity="right" >
+            <ImageView
+                android:id="@+id/play_image1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+
+                android:background="@mipmap/topmenu_icn_member"
+
+                android:layout_marginTop="20dp"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView android:id="@+id/img"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:src="@mipmap/image"/>
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/progressTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:layout_marginRight="10dp"/>
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                style="?android:attr/progressBarStyleHorizontal"
+
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:id="@+id/totalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="04:10"
+
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/playbackOrder"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:textSize="36px"
+                android:background="@mipmap/play_icn_one"
+
+                android:layout_marginLeft="20dp"/>
+
+            <Button
+                android:id="@+id/prev"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:textSize="36px"
+                android:background="@mipmap/playbar_btn_up"
+                android:layout_marginRight="10dp"/>
+            <Button
+                android:id="@+id/playButton"
+                android:layout_width="65dp"
+                android:layout_height="70dp"
+                android:textSize="36px"
+                android:background="@mipmap/playbar_btn_play"
+                android:layout_marginBottom="20dp"
+                android:src="@mipmap/playbar_btn_pause"
+                />
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:textSize="36px"
+                android:background="@mipmap/playbar_btn_next"
+                android:layout_marginLeft="10dp"/>
+            <Button
+                android:id="@+id/love"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:textSize="36px"
+                android:background="@mipmap/play_icn_love_prs"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

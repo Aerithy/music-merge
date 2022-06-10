@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android_workspace/music/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.255" />
+        <entry key="..\:/Android_workspace/music/app/src/main/res/drawable/actionbar_daily.xml" value="0.1205" />
+        <entry key="..\:/Android_workspace/music/app/src/main/res/drawable/actionbar_disco.xml" value="0.102" />
+        <entry key="..\:/Android_workspace/music/app/src/main/res/drawable/actionbar_fm.xml" value="0.1945" />
+        <entry key="..\:/Android_workspace/music/app/src/main/res/drawable/actionbar_friends.xml" value="0.248" />
+        <entry key="..\:/Android_workspace/music/app/src/main/res/drawable/actionbar_music.xml" value="0.1645" />
+        <entry key="..\:/Android_workspace/music/app/src/main/res/drawable/actionbar_upbill.xml" value="0.1205" />
+        <entry key="..\:/Android_workspace/music/app/src/main/res/drawable/background_gradient_white_black.xml" value="0.167" />
+        <entry key="..\:/Android_workspace/music/app/src/main/res/drawable/ic_launcher_background.xml" value="0.255" />
+        <entry key="..\:/Android_workspace/music/app/src/main/res/drawable/playbar_play.xml" value="0.248" />
+        <entry key="..\:/Android_workspace/music/app/src/main/res/drawable/songlist_item_list.xml" value="0.1" />
+        <entry key="..\:/Android_workspace/music/app/src/main/res/font/font_huawen.xml" value="0.1" />
+        <entry key="..\:/Android_workspace/music/app/src/main/res/layout/acitivity_localsongs.xml" value="0.2" />
+        <entry key="..\:/Android_workspace/music/app/src/main/res/layout/activity_base.xml" value="0.1" />
+        <entry key="..\:/Android_workspace/music/app/src/main/res/layout/activity_global.xml" value="0.11979166666666667" />
+        <entry key="..\:/Android_workspace/music/app/src/main/res/layout/activity_locallists.xml" value="0.264" />
+        <entry key="..\:/Android_workspace/music/app/src/main/res/layout/activity_localsongs.xml" value="0.19791666666666666" />
+        <entry key="..\:/Android_workspace/music/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Android_workspace/music/app/src/main/res/layout/activity_songlist.xml" value="0.4" />
+        <entry key="..\:/Android_workspace/music/app/src/main/res/layout/fg_friend.xml" value="0.1" />
+        <entry key="..\:/Android_workspace/music/app/src/main/res/layout/fg_music.xml" value="0.1" />
+        <entry key="..\:/Android_workspace/music/app/src/main/res/layout/fg_net.xml" value="0.2" />
+        <entry key="..\:/Android_workspace/music/app/src/main/res/layout/menu_main.xml" value="0.27898550724637683" />
+        <entry key="..\:/Android_workspace/music/app/src/main/res/layout/song_item_list.xml" value="0.16" />
+        <entry key="..\:/Android_workspace/music/app/src/main/res/layout/songlist_item_list.xml" value="0.1" />
+        <entry key="..\:/Android_workspace/music/app/src/main/res/menu/menu_main.xml" value="0.21481481481481482" />
+        <entry key="..\:/Android_workspace/music/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.255" />
+        <entry key="..\:/Android_workspace/music/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.255" />
+        <entry key="..\:/BJTU_CS_courses/Android/music-master/app/src/main/res/drawable/radius_border.xml" value="0.1425" />
+        <entry key="..\:/BJTU_CS_courses/Android/music-master/app/src/main/res/layout/activity_base.xml" value="0.1" />
+        <entry key="..\:/BJTU_CS_courses/Android/music-master/app/src/main/res/layout/activity_localsongs.xml" value="0.1" />
+        <entry key="..\:/BJTU_CS_courses/Android/music-master/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/BJTU_CS_courses/Android/music-master/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/BJTU_CS_courses/Android/music-master/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/BJTU_CS_courses/Android/music-master/app/src/main/res/layout/activity_songlist.xml" value="0.264" />
+        <entry key="..\:/BJTU_CS_courses/Android/music-master/app/src/main/res/layout/activity_web_view.xml" value="0.1" />
+        <entry key="..\:/BJTU_CS_courses/Android/music-master/app/src/main/res/layout/controller_bottom.xml" value="0.1" />
+        <entry key="..\:/BJTU_CS_courses/Android/music-master/app/src/main/res/layout/fg_net.xml" value="0.513840830449827" />
+        <entry key="..\:/music-master/app/src/main/res/drawable/actionbar_music.xml" value="0.142" />
+        <entry key="..\:/music-master/app/src/main/res/drawable/btn_search.xml" value="0.1" />
+        <entry key="..\:/music-master/app/src/main/res/drawable/gradient.xml" value="0.1265" />
+        <entry key="..\:/music-master/app/src/main/res/layout/activity_locallists.xml" value="0.14427083333333332" />
+        <entry key="..\:/music-master/app/src/main/res/layout/activity_localsongs.xml" value="0.14322916666666666" />
+        <entry key="..\:/music-master/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/music-master/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/music-master/app/src/main/res/layout/activity_play.xml" value="0.1" />
+        <entry key="..\:/music-master/app/src/main/res/layout/activity_register.xml" value="0.14427083333333332" />
+        <entry key="..\:/music-master/app/src/main/res/layout/activity_search.xml" value="0.3333333333333333" />
+        <entry key="..\:/music-master/app/src/main/res/layout/activity_search_box.xml" value="0.22" />
+        <entry key="..\:/music-master/app/src/main/res/layout/activity_songlist.xml" value="0.1933876811594203" />
+        <entry key="..\:/music-master/app/src/main/res/layout/activity_web_view.xml" value="0.18177083333333333" />
+        <entry key="..\:/music-master/app/src/main/res/layout/controller_bottom.xml" value="0.14427083333333332" />
+        <entry key="..\:/music-master/app/src/main/res/layout/fg_music.xml" value="0.1" />
+        <entry key="..\:/music-master/app/src/main/res/layout/fg_net.xml" value="0.22" />
+        <entry key="..\:/music-master/app/src/main/res/layout/item_listview.xml" value="0.1" />
+        <entry key="..\:/music-master/app/src/main/res/layout/nav_header.xml" value="0.14427083333333332" />
+        <entry key="..\:/music-master/app/src/main/res/layout/notifation.xml" value="0.1" />
+        <entry key="..\:/music-master/app/src/main/res/layout/song_item_list.xml" value="0.1933876811594203" />
+        <entry key="..\:/music-master/app/src/main/res/menu/nav_menu.xml" value="0.14427083333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
