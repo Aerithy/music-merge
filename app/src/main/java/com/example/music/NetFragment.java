@@ -161,6 +161,7 @@ public class NetFragment extends Fragment implements View.OnClickListener ,MyVie
 //                songs_1.add(new Song("Desperato", "Eagles", R.drawable.actionbar_music_normal));
 //                /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
                 intent.putExtra("song_list", (Serializable) songs_1);
+                intent.putExtra("song_list_pos", 0);
                 intent.putExtra("song_icon", icon);
                 intent.putExtra("song_intro", songList.getSongListName());
                 startActivity(intent);
@@ -179,6 +180,7 @@ public class NetFragment extends Fragment implements View.OnClickListener ,MyVie
 //                songs_1.add(new Song("Desperato", "Eagles", R.drawable.actionbar_music_normal));
 //                /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
                 intent.putExtra("song_list", (Serializable) songs_1);
+                intent.putExtra("song_list_pos", 1);
                 intent.putExtra("song_icon", icon);
                 intent.putExtra("song_intro", songList.getSongListName());
                 startActivity(intent);
@@ -197,6 +199,7 @@ public class NetFragment extends Fragment implements View.OnClickListener ,MyVie
 //                songs_1.add(new Song("Desperato", "Eagles", R.drawable.actionbar_music_normal));
 //                /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
                 intent.putExtra("song_list", (Serializable) songs_1);
+                intent.putExtra("song_list_pos", 2);
                 intent.putExtra("song_icon", icon);
                 intent.putExtra("song_intro", songList.getSongListName());
                 startActivity(intent);
