@@ -196,7 +196,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="Song List 4" />
+                        android:text="灵魂与鼓点的碰撞" />
 
                 </LinearLayout>
                 <LinearLayout
@@ -216,7 +216,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="Song List 5" />
+                        android:text="流行歌曲与管弦乐器的浪漫邂逅" />
 
                 </LinearLayout>
                 <LinearLayout
@@ -236,7 +236,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="Song List 6" />
+                        android:text="光影留声，岁月浸润醇醉迷人" />
 
                 </LinearLayout>
 

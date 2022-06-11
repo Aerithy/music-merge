@@ -162,6 +162,7 @@ public class NetFragment extends Fragment implements View.OnClickListener ,MyVie
 //                /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
                 intent.putExtra("song_list", (Serializable) songs_1);
                 intent.putExtra("song_icon", icon);
+                intent.putExtra("song_intro", songList.getSongListName());
                 startActivity(intent);
                 break;
             case R.id.ll_song_list_5:
@@ -179,6 +180,7 @@ public class NetFragment extends Fragment implements View.OnClickListener ,MyVie
 //                /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
                 intent.putExtra("song_list", (Serializable) songs_1);
                 intent.putExtra("song_icon", icon);
+                intent.putExtra("song_intro", songList.getSongListName());
                 startActivity(intent);
                 break;
             case R.id.ll_song_list_6:
@@ -196,6 +198,7 @@ public class NetFragment extends Fragment implements View.OnClickListener ,MyVie
 //                /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
                 intent.putExtra("song_list", (Serializable) songs_1);
                 intent.putExtra("song_icon", icon);
+                intent.putExtra("song_intro", songList.getSongListName());
                 startActivity(intent);
                 break;
         }

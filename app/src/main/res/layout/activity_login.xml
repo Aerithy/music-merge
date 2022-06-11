@@ -8,13 +8,15 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient" >
 
     <LinearLayout
         android:orientation="vertical"
-        android:background="@drawable/gradient"
+
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
+
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
@@ -28,7 +30,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="40dp"
                 android:src="@drawable/user_hearimage" />
-        </LinearLayout>>
+        </LinearLayout>
 
 
 

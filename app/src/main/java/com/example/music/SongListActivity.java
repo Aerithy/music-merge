@@ -47,11 +47,14 @@ public class SongListActivity extends AppCompatActivity implements View.OnClickL
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_songlist);
         bindView();
-        loadSongList();
 
         songs = (List<Song>) getIntent().getSerializableExtra("song_list");
         Icon = getIntent().getIntExtra("song_icon", R.drawable.actionbar_music_normal);
+        Intro = getIntent().getStringExtra("song_intro");
+        txt_songlist_intro.setText(Intro);
         img_songlist_icon.setBackgroundResource(Icon);
+
+        loadSongList();
 //        songs.add(new Song("海阔天空", "Beyond", R.drawable.actionbar_music_normal));
 //        songs.add(new Song("白玫瑰", "陈奕迅", R.drawable.actionbar_music_normal));
 //        songs.add(new Song("Desperato", "Eagles", R.drawable.actionbar_music_normal));
@@ -107,7 +110,8 @@ public class SongListActivity extends AppCompatActivity implements View.OnClickL
 
     public void loadSongList() {
         /*此处特别修改，根据上一个页面传值决定其歌曲列表*/
-        songList = CSApp.getLocalsongs();//初始化获取歌曲信息
+//        songList = CSApp.getLocalsongs();//初始化获取歌曲信息
+        songList = songs;
         /***************************************/
         SongAdapter songAdapter = new SongAdapter(songList);//歌曲适配器
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.mRecyclerView);

@@ -95,6 +95,7 @@ public class MusicFragment extends Fragment implements View.OnClickListener{
                 Intent intent = new Intent(getActivity(), SongListActivity.class);
                 intent.putExtra("song_list", (Serializable) songLists.get(position).getSongList()); // Send the song list content(A list of songs)
                 intent.putExtra("song_icon", songLists.get(position).getIcon());    // Send the song list icon
+                intent.putExtra("song_intro", songLists.get(position).getSongListName());
                 startActivity(intent);
             }
         });

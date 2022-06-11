@@ -142,9 +142,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         CSApp.setSongLists(songLists);
         ArrayList<Song> localsongs = (ArrayList<Song>) CSApp.getLocalsongs();
-        SongList songList_1 = new SongList("Song List 4", R.drawable.gargantua);
-        SongList songList_2 = new SongList("Song List 4", R.drawable.electric_state);
-        SongList songList_3 = new SongList("Song List 4", R.drawable.space_girl);
+        SongList songList_1 = new SongList("灵魂与鼓点的碰撞", R.drawable.gargantua);
+        SongList songList_2 = new SongList("流行音乐与管弦乐的浪漫邂逅", R.drawable.electric_state);
+        SongList songList_3 = new SongList("光影留声，岁月浸润醇醉迷人", R.drawable.space_girl);
 
         Random rd = new Random();
         for(Song song:localsongs) {
@@ -152,7 +152,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if (temp < 33) {
                 songList_1.addSongList(song);
             }
-            else if (temp < 66) {
+            else if (temp >= 33 && temp < 66) {
                 songList_2.addSongList(song);
             }
             else {
