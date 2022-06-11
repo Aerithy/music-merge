@@ -46,13 +46,14 @@ public class SongListActivity extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_songlist);
+        Bundle bundle = getIntent().getExtras();
         bindView();
 
-        int pos = getIntent().getIntExtra("song_list_pos", 0);
+        int pos = bundle.getInt("song_list_pos"); // getIntent().getIntExtra("song_list_pos", 0);
         songs = CSApp.getSongLists().get(pos).getSongList();
         // songs = (List<Song>) getIntent().getSerializableExtra("song_list");
-        Icon = getIntent().getIntExtra("song_icon", R.drawable.actionbar_music_normal);
-        Intro = getIntent().getStringExtra("song_intro");
+        Icon = bundle.getInt("song_icon");
+        Intro = bundle.getString("song_intro");
         txt_songlist_intro.setText(Intro);
         img_songlist_icon.setBackgroundResource(Icon);
 

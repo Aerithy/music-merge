@@ -93,10 +93,16 @@ public class MusicFragment extends Fragment implements View.OnClickListener{
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(getActivity(), SongListActivity.class);
-                intent.putExtra("song_list", (Serializable) songLists.get(position).getSongList()); // Send the song list content(A list of songs)
-                intent.putExtra("song_list_pos", position);
-                intent.putExtra("song_icon", songLists.get(position).getIcon());    // Send the song list icon
-                intent.putExtra("song_intro", songLists.get(position).getSongListName());
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("song_list", (Serializable) songLists.get(position).getSongList());
+                bundle.putInt("song_list_pos", position);
+                bundle.putInt("song_icon", songLists.get(position).getIcon());
+                bundle.putString("song_intro", songLists.get(position).getSongListName());
+//                intent.putExtras(bundle); // Send the song list content(A list of songs)
+//                intent.putExtra("song_list_pos", position);
+//                intent.putExtra("song_icon", songLists.get(position).getIcon());    // Send the song list icon
+//                intent.putExtra("song_intro", songLists.get(position).getSongListName());
+                intent.putExtras(bundle);
                 startActivity(intent);
             }
         });

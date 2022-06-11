@@ -144,6 +144,7 @@ public class NetFragment extends Fragment implements View.OnClickListener ,MyVie
     @Override
     public void onClick(View v) {
         Intent intent = new Intent(getActivity(), SongListActivity.class);
+        Bundle bundle = new Bundle();
         SongList songList;
         int icon;
         switch(v.getId()) {
@@ -160,10 +161,12 @@ public class NetFragment extends Fragment implements View.OnClickListener ,MyVie
 //                songs_1.add(new Song("白玫瑰", "陈奕迅", R.drawable.actionbar_music_normal));
 //                songs_1.add(new Song("Desperato", "Eagles", R.drawable.actionbar_music_normal));
 //                /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-                intent.putExtra("song_list", (Serializable) songs_1);
-                intent.putExtra("song_list_pos", 0);
-                intent.putExtra("song_icon", icon);
-                intent.putExtra("song_intro", songList.getSongListName());
+
+                bundle.putInt("song_list_pos", 0);
+                bundle.putSerializable("song_list", (Serializable) songs_1);
+                bundle.putInt("song_icon", icon);
+                bundle.putString("song_intro", songList.getSongListName());
+                intent.putExtras(bundle);
                 startActivity(intent);
                 break;
             case R.id.ll_song_list_5:
@@ -179,10 +182,12 @@ public class NetFragment extends Fragment implements View.OnClickListener ,MyVie
 //                songs_1.add(new Song("白玫瑰", "陈奕迅", R.drawable.actionbar_music_normal));
 //                songs_1.add(new Song("Desperato", "Eagles", R.drawable.actionbar_music_normal));
 //                /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-                intent.putExtra("song_list", (Serializable) songs_1);
-                intent.putExtra("song_list_pos", 1);
-                intent.putExtra("song_icon", icon);
-                intent.putExtra("song_intro", songList.getSongListName());
+
+                bundle.putInt("song_list_pos", 1);
+                bundle.putSerializable("song_list", (Serializable) songs_1);
+                bundle.putInt("song_icon", icon);
+                bundle.putString("song_intro", songList.getSongListName());
+                intent.putExtras(bundle);
                 startActivity(intent);
                 break;
             case R.id.ll_song_list_6:
@@ -198,10 +203,12 @@ public class NetFragment extends Fragment implements View.OnClickListener ,MyVie
 //                songs_1.add(new Song("白玫瑰", "陈奕迅", R.drawable.actionbar_music_normal));
 //                songs_1.add(new Song("Desperato", "Eagles", R.drawable.actionbar_music_normal));
 //                /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-                intent.putExtra("song_list", (Serializable) songs_1);
-                intent.putExtra("song_list_pos", 2);
-                intent.putExtra("song_icon", icon);
-                intent.putExtra("song_intro", songList.getSongListName());
+
+                bundle.putInt("song_list_pos", 2);
+                bundle.putSerializable("song_list", (Serializable) songs_1);
+                bundle.putInt("song_icon", icon);
+                bundle.putString("song_intro", songList.getSongListName());
+                intent.putExtras(bundle);
                 startActivity(intent);
                 break;
         }
