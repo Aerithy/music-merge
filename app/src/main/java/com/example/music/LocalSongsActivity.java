@@ -28,6 +28,7 @@ public class LocalSongsActivity extends AppCompatActivity implements View.OnClic
     private LinearLayout ll_songlist_toolbar;
     private LayoutInflater mInflater;
     private ImageView img_song_icon;
+    private TextView txt_title;
     private TextView txt_Songname;
     private TextView txt_singer;
     private ImageView img_pause;
@@ -36,6 +37,7 @@ public class LocalSongsActivity extends AppCompatActivity implements View.OnClic
 
     private List<Song> songList=new ArrayList<Song>();
     LinearLayoutManager layoutManager;
+    private int type;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -45,6 +47,11 @@ public class LocalSongsActivity extends AppCompatActivity implements View.OnClic
         setContentView(R.layout.activity_localsongs);
 
         bindView();
+        Bundle bundle = getIntent().getExtras();
+        type = bundle.getInt("Act_type");
+        if (type == 1) {
+            txt_title.setText("我喜欢");
+        }
         loadSongList();
 //        songs.add(new Song("海阔天空", "Beyond", R.drawable.actionbar_music_normal));
 //        songs.add(new Song("白玫瑰", "陈奕迅", R.drawable.actionbar_music_normal));
@@ -88,6 +95,7 @@ public class LocalSongsActivity extends AppCompatActivity implements View.OnClic
         ll_songlist_toolbar = (LinearLayout) findViewById(R.id.ll_songlist_toolbar);
         txt_Songname = (TextView) findViewById(R.id.txt_Songname);
         txt_singer = (TextView) findViewById(R.id.txt_singer);
+        txt_title = (TextView) findViewById(R.id.txt_title);
 
         img_pause = (ImageView) findViewById(R.id.img_pause);
 
@@ -97,6 +105,15 @@ public class LocalSongsActivity extends AppCompatActivity implements View.OnClic
     }
     public void loadSongList() {
         songList = CSApp.getLocalsongs();//初始化获取歌曲信息
+        if (type == 1) {
+            List<Song> temp = new ArrayList<Song>();
+            for (Song song:songList) {
+                if (song.ifLove == 1) {
+                    temp.add(song);
+                }
+            }
+            songList = temp;
+        }
         SongAdapter songAdapter = new SongAdapter(songList);//歌曲适配器
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.mRecyclerView);
         layoutManager = new LinearLayoutManager(LocalSongsActivity.this);

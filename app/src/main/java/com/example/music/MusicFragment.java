@@ -113,11 +113,17 @@ public class MusicFragment extends Fragment implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
+        Intent intent = new Intent(getActivity(), LocalSongsActivity.class);
+        Bundle bundle = new Bundle();
         switch (v.getId()) {
             case R.id.btn_local_music:
-                Intent intent = new Intent(getActivity(), LocalSongsActivity.class);
-                startActivity(intent);
+                bundle.putInt("Act_type", 0);
+                break;
+            case R.id.btn_recently:
+                bundle.putInt("Act_type", 1);
                 break;
         }
+        intent.putExtras(bundle);
+        startActivity(intent);
     }
 }

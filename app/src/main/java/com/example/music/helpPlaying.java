@@ -14,6 +14,9 @@ public class helpPlaying {
     private int isPlaying=0;
     private Bitmap picture;
 
+    private CurrentSongApp CSApp;
+
+
     public void setPicture(Bitmap inPicture) {
         picture=inPicture;
     }//设置当前图片
